@@ -197,5 +197,16 @@ header nav a:hover {
   padding: 0;
 }
 .work-history {
-  background-color: grey;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 1.2rem;
 }
