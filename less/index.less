@@ -78,15 +78,21 @@ img{
 p{
 	line-height:1.25;
 	margin: 1rem 0;
+	font-size: 1.6rem;
 }
 h1{
 	margin: 2rem 0;
+	font-size: 2.5rem;
 }
 div{
-	border: @helper-red
+	border: @helper-red;
+	padding: 1rem;
 }
 
 //----------------------nested selectors-----------------------------------
+
+//header section
+
 header{
 	nav{
 		font-size: 1.8rem;
@@ -105,6 +111,45 @@ header{
 	}//nav
 	
 }//header
+
+
+//picture and name section
+
 .main-container{
 	background-color: lightgrey;
+	// padding: 1rem;
+	img{
+		padding: 0.3rem;
+		background-color: black;
+	}
+	button{
+		background: grey;
+		color:white;
+		border-radius: 30px;
+		font-size: 1.2rem;
+	}
+	button:hover{
+		font-size:1.6rem;
+		background: rgb(50, 153, 221);
+	}//button
+}//main-container
+
+//description section
+
+.content{
+	.custom_flex(flex, center, center);
+	
+	.skill-section{
+		.custom_flex(flex,flex-start,center);	
+		flex-wrap: wrap;
+		.skills{
+			p{
+				border-bottom:1px solid lightgrey;
+				padding: 0;
+			}
+		}//list of skills
+	}//skills
+}//centent
+.work-history{
+	background-color:grey;
 }
