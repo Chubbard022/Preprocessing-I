@@ -123,10 +123,44 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
+html {
+  font-size: 62.5%;
+}
+.container {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+img {
+  wax-width: 120%;
+  width: 20rem;
+}
+p {
+  line-height: 1.25;
+  margin: 1rem 0;
 }
 h1 {
+  margin: 2rem 0;
+}
+div {
+  border: 1px solid red;
+}
+header nav {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+header nav a {
+  text-decoration: none;
   color: black;
+  margin: 0 auto;
+}
+header nav a:hover {
+  color: grey;
+  font-size: 2rem;
+}
+.main-container {
+  background-color: lightgrey;
 }
