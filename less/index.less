@@ -98,15 +98,28 @@ header{
 		font-size: 1.8rem;
 		.custom_flex(flex, center, center);
 		margin: 5px 0;
-		
+		@media(max-width: 50rem){
+			flex-direction: column;
+			align-items: center;
+		}
 		a{
 			text-decoration: none; 
 			color:black;
 			margin: 0 auto;
+			@media(max-width: 50rem){
+				margin: 2rem 0;
+				font-size: 3rem;
+				align-content: center;
+			}
 		}//a
 		a:hover{
 			color:grey;
 			font-size: 2rem;
+			@media(max-width: 50rem){
+				font-size: 3rem;
+				border-bottom: 1px solid white;
+				color: grey;
+			}
 		}
 	}//nav
 	
@@ -118,9 +131,15 @@ header{
 .main-container{
 	background-color: lightgrey;
 	// padding: 1rem;
+	
 	img{
 		padding: 0.3rem;
 		background-color: black;
+
+		@media(max-width: 50rem){
+			width: 30rem;
+			margin-left:11rem;
+		}
 	}
 	button{
 		background: grey;
@@ -139,13 +158,35 @@ header{
 .content{
 	.custom_flex(flex, center, center);
 	
+	@media(max-width: 50rem){
+		flex-direction: column;
+
+		h1{
+			font-size: 3rem;
+		}
+	}
+	.about-myself{
+		@media(max-width: 50rem){
+			padding:2rem;
+			border-bottom: 1px solid black;
+		}
+	}
 	.skill-section{
+
 		.custom_flex(flex,flex-start,center);	
 		flex-wrap: wrap;
+
+		@media(max-width:50rem){
+			flex-direction: column;
+		}
 		.skills{
 			p{
 				border-bottom:1px solid lightgrey;
 				padding: 0;
+
+				@media(max-width:50rem){
+					border-bottom: 1px solid white;
+				}
 			}
 		}//list of skills
 	}//skills
